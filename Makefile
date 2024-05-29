@@ -1,2 +1,7 @@
+.PHONY: main
+
 main:
-	odin run .
+	${HOME}/.local/bin/odin/odin run .
+
+dev:
+	find . -iname "*.odin" | entr -pcr make
